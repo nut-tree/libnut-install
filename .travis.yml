@@ -37,4 +37,5 @@ deploy:
     script: npm publish --access public
     on:
       tags: true
-      condition: $TRAVIS_OS_NAME = "linux" && $TRAVIS_NODE_VERSION = "12"
+      os: 'linux'
+      node_js: '12'
