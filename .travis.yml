@@ -5,12 +5,28 @@ matrix:
   include:
     - os: linux
       dist: bionic
-      node_js: "lts/dubnium"
+      node_js: "10"
     - os: osx
       osx_image: xcode11
-      node_js: "lts/dubnium"
+      node_js: "10"
     - os: windows
-      node_js: "lts/dubnium"
+      node_js: "10"
+    - os: linux
+      dist: bionic
+      node_js: "11"
+    - os: osx
+      osx_image: xcode11
+      node_js: "11"
+    - os: windows
+      node_js: "11"
+    - os: linux
+      dist: bionic
+      node_js: "12"
+    - os: osx
+      osx_image: xcode11
+      node_js: "12"
+    - os: windows
+      node_js: "12"
 
 before_deploy:
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
@@ -21,4 +37,4 @@ deploy:
     script: npm publish --access public
     on:
       tags: true
-      condition: $TRAVIS_OS_NAME = "linux"
+      condition: $TRAVIS_OS_NAME = "linux" && $TRAVIS_NODE_VERSION = "12"
