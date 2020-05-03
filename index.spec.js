@@ -52,4 +52,16 @@ describe("libnut", () => {
       "capture"
     );
   });
+
+  it("screen should provide a highlight function", () => {
+    // GIVEN
+    const screen = libnut.screen;
+
+    // WHEN
+
+    // THEN
+    expect(screen).toHaveProperty(
+      "highlight"
+    );
+  });
 });
