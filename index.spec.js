@@ -4,9 +4,7 @@ describe("libnut", () => {
   it.each([
     ["captureScreen"],
     ["dragMouse"],
-    ["getColor"],
     ["getMousePos"],
-    ["getPixelColor"],
     ["getScreenSize"],
     ["getXDisplayName"],
     ["keyTap"],
@@ -14,7 +12,6 @@ describe("libnut", () => {
     ["mouseClick"],
     ["mouseToggle"],
     ["moveMouse"],
-    ["moveMouseSmooth"],
     ["scrollMouse"],
     ["setKeyboardDelay"],
     ["setMouseDelay"],
