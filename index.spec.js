@@ -17,7 +17,11 @@ describe("libnut", () => {
     ["setMouseDelay"],
     ["setXDisplayName"],
     ["typeString"],
-    ["typeStringDelayed"]
+    ["typeStringDelayed"],
+    ["getWindows"],
+    ["getActiveWindow"],
+    ["getWindowRect"],
+    ["getWindowTitle"]
   ])("should provide a %s method", method => {
     // GIVEN
 
