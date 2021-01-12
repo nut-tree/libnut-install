@@ -27,7 +27,8 @@
   },
   "homepage": "https://github.com/nut-tree/libnut",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "publish:next": "npm publish --tag next"
   },
   "engines": {
     "node": ">=10.15.3"
