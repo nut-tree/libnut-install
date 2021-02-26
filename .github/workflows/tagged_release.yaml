@@ -1,8 +1,8 @@
-name: Create snapshot release
+name: Create tagged release
 on:
   push:
-    branches:
-      - develop
+    tags:
+      - v*.*.*
 
 jobs:
   test:
@@ -23,15 +23,8 @@ jobs:
         run: |
           sudo apt-get install -y cmake libx11-dev zlib1g-dev libpng-dev libxtst-dev g++-4.8 gcc-4.8
           export CXX=g++-4.8 && $CXX --version
-      - name: Install
-        run: npm ci
-      - name: Install latest libnut snapshots
-        run: |
-          npm i @nut-tree/libnut-darwin@next
-          npm i @nut-tree/libnut-linux@next
-          npm i @nut-tree/libnut-win32@next
-      - name: Test with latest snapshots
-        run: npm t
+      - name: Install and test
+        run: npm cit
 
   deploy:
     needs:
