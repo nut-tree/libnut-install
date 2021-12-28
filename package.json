@@ -1,6 +1,6 @@
 {
   "name": "@nut-tree/libnut",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "libnut is an N-API module for desktop automation with node",
   "main": "index.js",
   "typings": "index.d.ts",
@@ -34,11 +34,11 @@
     "node": ">=10.15.3"
   },
   "dependencies": {
-    "@nut-tree/libnut-darwin": "2.1.3",
-    "@nut-tree/libnut-linux": "2.1.3",
-    "@nut-tree/libnut-win32": "2.1.3"
+    "@nut-tree/libnut-darwin": "2.1.4",
+    "@nut-tree/libnut-linux": "2.1.4",
+    "@nut-tree/libnut-win32": "2.1.4"
   },
   "devDependencies": {
-    "jest": "25.5.4"
+    "jest": "27.4.5"
   }
 }
