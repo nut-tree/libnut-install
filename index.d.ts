@@ -58,7 +58,7 @@ export function getWindowTitle(handle: number): string;
  * @param {number} handle - The handle ID of the window to be focused.
  * @returns {void}
  */
-export function focusWindow(handle: number): void
+export function focusWindow(handle: number): boolean
 
 /**
  * Resizes a window by its handle to the given width and height.
@@ -68,7 +68,7 @@ export function focusWindow(handle: number): void
  * @param {Size} newSize - The new size of the window.
  * @returns {void}
  */
-export function resizeWindow(handle: number, newSize: Size): void
+export function resizeWindow(handle: number, newSize: Size): boolean
 
 /**
  * Moves a window by its handle to the given x and y coordinates.
@@ -77,6 +77,6 @@ export function resizeWindow(handle: number, newSize: Size): void
  * @param {Point} newOrigin - The new size of the window.
  * @returns {void}
  */
-export function moveWindow(handle: number, newOrigin: Point): void
+export function moveWindow(handle: number, newOrigin: Point): boolean
 
 export const screen: Screen;
