@@ -1,9 +1,9 @@
-import libnut = require("@nut-tree/libnut");
+import {libnut} from "../import_libnut";
 import {Region} from "@nut-tree/nut-js";
 import ScreenAction from "./libnut-screen.class";
 
 jest.mock("jimp", () => {});
-jest.mock("@nut-tree/libnut");
+jest.mock("../import_libnut");
 
 beforeEach(() => {
   jest.resetAllMocks();

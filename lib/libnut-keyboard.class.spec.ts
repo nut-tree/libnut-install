@@ -1,8 +1,8 @@
-import libnut = require("@nut-tree/libnut");
+import {libnut} from "../import_libnut";
 import {Key} from "@nut-tree/nut-js";
 import KeyboardAction from "./libnut-keyboard.class";
 
-jest.mock("@nut-tree/libnut");
+jest.mock("../import_libnut");
 
 beforeEach(() => {
     jest.resetAllMocks();
