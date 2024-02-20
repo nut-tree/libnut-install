@@ -1,13 +1,5 @@
 # @nut-tree/libnut
-Installation meta package for platform dependent libnut packages
 
-## Installation
-```bash
-npm i @nut-tree/libnut
-```
+This repo has been archived since it has been included in the [nut.js monorepo](https://github.com/nut-tree/nut.js/tree/develop/providers/libnut)
 
-or
-
-```bash
-yarn add @nut-tree/libnut
-```
+It will no longer be updated in any way, please consult the monorepo.
